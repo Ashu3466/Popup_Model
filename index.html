@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    
+    
+    <Button id="btn">Click</Button>
+    <div id="myModel" class="model">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2> Header</h2>
+    </div>
+    <div class="modal-body">
+      <p> Modal Body</p>
+      <p>text here</p>
+    </div>
+     <div class="modal-footer">
+      <h3>Footer</h3>
+    </div>
+    </div> 
+    
+    
+    
+    
+    <script>
+     var model =  document.getElementById("myModel");
+    var btn = document.getElementById("btn");
+     var close = document.getElementsByClassName("close")[0];
+     
+     btn.onclick = function(){
+       model.style.display = "block";
+     }
+     
+     close.onclick = function(){
+       model.style.display = "none";
+     }
+     
+     window.onclick = function(event){
+       if(event.target == model){
+         display.style.display = "none";
+       }
+     }
+    </script>
+  </body>
+</html>
